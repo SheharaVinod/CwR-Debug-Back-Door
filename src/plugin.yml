@@ -1,0 +1,24 @@
+name: CwRConsoleBackDoor
+main: lk.cwresport.DebugBackDoor.CwRConsoleBackDoor
+version: 1.0.0
+description: Back door for access console while in-game.
+website: cwresport.lk
+author: Mr_Unknown
+
+commands:
+  console-back-door:
+    description: you can execute console command in game.
+    permission: cwr-core.console-back-door.admin
+    usage: /cbd <console command>
+    permission-message: You don't have permission to execute this command.
+    aliases:
+      - cbd
+
+permissions:
+  cwr-core.console-back-door.admin:
+    description: this permission need to execute console command in in-game.
+    default: op
+
+  cwr-core.console-back-door.notify:
+    description: this permission warn to op players ;when a player trying to execute console command.
+    default: op
