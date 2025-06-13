@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CwR-Debug-Back-Door:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CwR_Debug_Back_Door_jar</output-path>
+    <root id="archive" name="CwR-Debug-Back-Door.jar">
+      <element id="module-output" name="CwR-Debug-Back-Door" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+    </root>
+  </artifact>
+</component>
