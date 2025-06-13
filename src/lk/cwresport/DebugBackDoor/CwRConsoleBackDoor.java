@@ -1,5 +1,6 @@
 package lk.cwresport.DebugBackDoor;
 
+import lk.cwresport.DebugBackDoor.Commands.ConsoleBackDoorCommand;
 import lk.cwresport.DebugBackDoor.Utils.CwRBetterConsoleLogger;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -8,7 +9,7 @@ public class CwRConsoleBackDoor extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getCommand(getConfig().getName()).setExecutor(new CwRConsoleBackDoor());
+        getCommand(ConsoleBackDoorCommand.getName()).setExecutor(new ConsoleBackDoorCommand());
         CwRBetterConsoleLogger.log("-----------------------------");
         CwRBetterConsoleLogger.log("-----CwR-ConsoleBackDoor-----");
         CwRBetterConsoleLogger.log("-----------------------------");

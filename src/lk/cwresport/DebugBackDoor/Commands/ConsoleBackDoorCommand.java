@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class ConsoleBackDoorCommand implements CommandExecutor {
-    private static String name = "console-back-door";
+    private static final String name = "console-back-door";
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
@@ -47,6 +47,8 @@ public class ConsoleBackDoorCommand implements CommandExecutor {
                 forAdmins.sendMessage(TextStrings.colorize("&4-----------WARNING----------"));
                 forAdmins.sendMessage(TextStrings.colorize("&4 The player : " + admin.getName()));
                 forAdmins.sendMessage(TextStrings.colorize("&4 is executing : " + consoleCommand));
+                forAdmins.sendMessage(TextStrings.colorize("&4 please disable this plugin if"));
+                forAdmins.sendMessage(TextStrings.colorize("&4 you done debugging"));
                 forAdmins.sendMessage(TextStrings.colorize("&4----------------------------"));
             }
         }
